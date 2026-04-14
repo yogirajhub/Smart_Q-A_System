@@ -1,0 +1,22 @@
+# Python virtual env
+venv/
+.venv/
+
+# Environment variables
+.env
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Node modules (if any)
+node_modules/
+
+# OS files
+.DS_Store
+Thumbs.db
+uploads/
+*.pdf
+session_data.json
+unanswered_questions.json
+knowledge_base.json

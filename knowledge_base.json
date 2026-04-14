@@ -1,0 +1,47 @@
+[
+  {
+    "question": "tell me about yourself",
+    "answer": "i'm not going to tell you anything",
+    "added_at": "2026-03-17 16:37:46"
+  },
+  {
+    "question": "what is react.js",
+    "answer": "react.js is use for frontend development",
+    "added_at": "2026-03-17 16:47:21"
+  },
+  {
+    "question": "who are you",
+    "answer": "I'm smart Q & A assistant",
+    "added_at": "2026-03-17 16:48:32"
+  },
+  {
+    "question": "what is paneer",
+    "answer": "paneer is a protein reach dairy product",
+    "added_at": "2026-03-17 16:50:53"
+  },
+  {
+    "question": "what is india",
+    "answer": "it is a country union of states",
+    "added_at": "2026-03-17 17:02:27"
+  },
+  {
+    "question": "who is yogiraj",
+    "answer": "he is a cricket player",
+    "added_at": "2026-03-17 17:03:51"
+  },
+  {
+    "question": "who is shreyash",
+    "answer": "shreyash is boy",
+    "added_at": "2026-03-20 13:47:58"
+  },
+  {
+    "question": "who invented python",
+    "answer": "Guido van Rossum is credited with inventing the Python programming language.",
+    "added_at": "2026-03-23 16:21:36"
+  },
+  {
+    "question": "what is closyng.ai",
+    "answer": "It is AI based calling agent",
+    "added_at": "2026-03-23 16:23:43"
+  }
+]

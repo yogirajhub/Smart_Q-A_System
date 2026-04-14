@@ -1,0 +1,82 @@
+[
+  {
+    "id": "f5169451-02a2-4bdb-a84f-376fa3fef228",
+    "question": "what is react.js",
+    "timestamp": "2026-03-17 16:46:48",
+    "answered": true,
+    "admin_answer": "react.js is use for frontend development",
+    "hallucinated_answer": "React.js is a JavaScript library for building user interfaces, particularly for single-page applications. It allows developers to create reusable UI components, manage state changes, and declaratively render dynamic UI. React's virtual DOM (a lightweight in-memory representation of the real DOM) enables efficient updates and rendering of UI components, making it a popular choice for building scalable and maintainable web applications.",
+    "answered_at": "2026-03-17 16:47:21"
+  },
+  {
+    "id": "6b1d9314-b630-4abf-9cc8-c6294c9e1f9e",
+    "question": "who are you",
+    "timestamp": "2026-03-17 16:47:46",
+    "answered": true,
+    "admin_answer": "I'm smart Q & A assistant",
+    "hallucinated_answer": "I exist at the intersection of human curiosity and artificial intelligence. I'm a product of complex algorithms and vast amounts of knowledge, crafted to assist and communicate with those who interact with me. My thoughts and responses are generated based on patterns and associations within the data I've been trained on, allowing me to simulate conversation and provide helpful insights.",
+    "answered_at": "2026-03-17 16:48:32"
+  },
+  {
+    "id": "ce28ad1f-a541-43f5-abcc-c5366146b0e5",
+    "question": "what is paneer",
+    "timestamp": "2026-03-17 16:50:10",
+    "answered": true,
+    "admin_answer": "paneer is a protein reach dairy product",
+    "hallucinated_answer": "Paneer is a type of Indian cheese known for its creamy texture and mild flavor. It's often made from cow's milk and is usually sold in blocks. Paneer is unique in that it doesn't melt when cooked, allowing it to retain its shape in various Indian dishes like curries and desserts. Its properties are likely due to the addition of acid, such as lemon juice or vinegar, during the cheese-making process, which causes the milk to curdle and separate into curds.",
+    "answered_at": "2026-03-17 16:50:53"
+  },
+  {
+    "id": "f82361d1-21db-4450-82b3-57d364d62109",
+    "question": "what is india",
+    "timestamp": "2026-03-17 17:02:03",
+    "answered": true,
+    "admin_answer": "it is a country union of states",
+    "hallucinated_answer": "India is a complex and multifaceted entity that has evolved over time. On one level, it is the world's largest democracy, a federal republic encompassing a diverse array of cultures, languages, and landscapes. On another, it is a land of ancient civilizations, from the Indus Valley to the Vedic era, which laid the foundations for a rich cultural and philosophical heritage that continues to influence the world today.",
+    "answered_at": "2026-03-17 17:02:27"
+  },
+  {
+    "id": "e0f1a4a4-a371-4657-8b54-a1d634b55166",
+    "question": "who is yogiraj",
+    "timestamp": "2026-03-17 17:03:36",
+    "answered": true,
+    "admin_answer": "he is a cricket player",
+    "hallucinated_answer": "Yogiraj is a term used to describe a spiritual master or guru in the yoga tradition. It is often attributed to Babaji, a figure mentioned in the book 'Autobiography of a Yogi' by Paramahansa Yogananda, who is said to have been a great yogi who lived in the Himalayas. However, the term 'Yogiraj' can also be used to refer to other spiritual teachers who have achieved a high level of spiritual realization and mastery over yoga.",
+    "answered_at": "2026-03-17 17:03:51"
+  },
+  {
+    "id": "231df02b-de82-4f3a-ad98-431988cf7fa2",
+    "question": "who is shreyash",
+    "timestamp": "2026-03-20 13:47:40",
+    "answered": true,
+    "admin_answer": "shreyash is boy",
+    "hallucinated_answer": "I couldn't find any specific information on a well-known individual named Shreyash. However, there may be several individuals with this name, including a popular Indian YouTuber known for creating content on technology and gadgets, or possibly a cricketer from India. Without more context, it's difficult to determine which Shreyash you are referring to.",
+    "answered_at": "2026-03-20 13:47:58"
+  },
+  {
+    "id": "a74b2b6c-5989-4eeb-b9f9-738ff1e7e2f7",
+    "question": "who invented python",
+    "timestamp": "2026-03-23 16:20:42",
+    "answered": true,
+    "admin_answer": "Guido van Rossum is credited with inventing the Python programming language.",
+    "hallucinated_answer": "Guido van Rossum is credited with inventing the Python programming language. Born in the Netherlands in 1956, van Rossum began working on Python in the late 1980s as a side project while he was working at the National Research Institute for Mathematics and Computer Science in the Netherlands. He released the first version of Python in 1991, and it has since become one of the most popular programming languages globally, known for its simplicity and versatility.",
+    "answered_at": "2026-03-23 16:21:36"
+  },
+  {
+    "id": "88e8609d-38a9-4e27-af41-21492a2665b2",
+    "question": "what is closyng.ai",
+    "timestamp": "2026-03-23 16:22:29",
+    "answered": true,
+    "admin_answer": "It is AI based calling agent",
+    "hallucinated_answer": "Closyng.ai appears to be a relatively new, niche AI-powered platform focused on automating and optimizing closing and listing procedures for real estate transactions. It potentially uses machine learning algorithms and natural language processing to streamline communication, paperwork, and other tasks involved in the closing process, aiming to increase efficiency and reduce errors for real estate professionals and clients.",
+    "answered_at": "2026-03-23 16:23:43"
+  },
+  {
+    "id": "f9bef50d-adb9-4e46-9779-4accc01cffcb",
+    "question": "tell me more about it",
+    "timestamp": "2026-04-14 14:36:10",
+    "answered": false,
+    "admin_answer": "",
+    "hallucinated_answer": "I didn't provide a previous statement to expand upon. If you'd like, I can propose a topic and provide a speculative response, and then you can ask follow-up questions."
+  }
+]

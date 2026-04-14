@@ -1,0 +1,194 @@
+# 🤖 Smart Q&A System — Setup & Run Guide
+
+A FastAPI web application that answers questions from uploaded documents using
+Groq LLM, with audio responses, unanswered-question tracking, and an admin panel.
+
+---
+
+## 📁 Project Structure
+
+```
+smart_qa_app/
+├── main.py                      ← FastAPI backend (all routes & logic)
+├── .env                         ← API keys and config (YOU EDIT THIS)
+├── requirements.txt             ← Python dependencies
+├── templates/
+│   └── index.html               ← Frontend UI (HTML + CSS + JS)
+├── uploads/                     ← Uploaded files (auto-created)
+├── audio_files/                 ← Generated MP3 audio (auto-created)
+├── unanswered_questions.json    ← Persisted unanswered Q&A (auto-created)
+├── knowledge_base.json          ← Admin answers stored here (auto-created)
+└── session_data.json            ← Current file session (auto-created)
+```
+
+---
+
+## ✅ Step-by-Step: Running in VS Code
+
+### STEP 1 — Prerequisites
+
+Make sure you have the following installed on your computer:
+
+1. **Python 3.9+**
+   - Check: open a terminal and run `python --version`
+   - Download from https://www.python.org/downloads/ if missing
+
+2. **VS Code**
+   - Download from https://code.visualstudio.com/
+
+3. **Python extension for VS Code** (optional but helpful)
+   - Install from VS Code Extensions panel → search "Python" by Microsoft
+
+---
+
+### STEP 2 — Get a Groq API Key (FREE)
+
+1. Go to https://console.groq.com/
+2. Sign up / log in
+3. Click **API Keys** in the left sidebar
+4. Click **Create API Key**
+5. Copy the key (starts with `gsk_...`)
+
+---
+
+### STEP 3 — Open the project in VS Code
+
+1. Open VS Code
+2. Go to **File → Open Folder**
+3. Select the `smart_qa_app/` folder
+4. VS Code will open the project
+
+---
+
+### STEP 4 — Open the built-in terminal
+
+In VS Code:
+- Press **Ctrl + `** (backtick) on Windows/Linux
+- Or press **Cmd + `** on Mac
+- Or go to **Terminal → New Terminal** from the top menu
+
+---
+
+### STEP 5 — Create a virtual environment
+
+In the terminal, run:
+
+```bash
+# Windows
+python -m venv venv
+venv\Scripts\activate
+
+# Mac / Linux
+python3 -m venv venv
+source venv/bin/activate
+```
+
+You should see `(venv)` appear at the start of your terminal prompt.
+
+---
+
+### STEP 6 — Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+Wait for all packages to install (takes 1-2 minutes).
+
+---
+
+### STEP 7 — Configure your .env file
+
+1. Open the `.env` file in VS Code
+2. Replace `your_groq_api_key_here` with your actual Groq API key:
+
+```env
+GROQ_API_KEY=gsk_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+GROQ_MODEL=llama3-8b-8192
+TTS_LANGUAGE=en
+APP_HOST=0.0.0.0
+APP_PORT=8000
+```
+
+3. Save the file (Ctrl+S / Cmd+S)
+
+---
+
+### STEP 8 — Run the application
+
+```bash
+python main.py
+```
+
+You should see output like:
+```
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     Started reloader process [xxxxx]
+```
+
+---
+
+### STEP 9 — Open in your browser
+
+Go to: **http://localhost:8000**
+
+---
+
+## 🎯 How to Use the App
+
+### Uploading a File
+1. Click the upload zone (or drag & drop a file)
+2. Supported: `.txt`, `.pdf`, `.docx`, `.md`
+3. Wait for "File uploaded successfully!" confirmation
+
+### Asking Questions
+1. Type your question in the chat input
+2. Press **Enter** or click the ➤ button
+3. The answer appears as **text + audio player**
+4. Click ▶ to hear the audio response
+
+### Out-of-Scope Questions
+- If your question isn't covered by the document, you'll see:
+  *"We will get back to you on this question."*
+- A hallucinated preliminary answer is shown as a hint
+- The question is automatically saved to the **Admin Panel**
+
+### Admin Panel
+1. Click the **🛠️ Admin Panel** tab (shows badge count of unanswered questions)
+2. You'll see all unanswered questions
+3. Type the correct answer in the text area
+4. Click **💾 Save Answer** → the answer is stored and will be used for future identical questions
+5. Click **🗑️ Remove** to dismiss a question without answering
+
+---
+
+## 🔧 Troubleshooting
+
+| Problem | Solution |
+|---------|----------|
+| `GROQ_API_KEY not found` | Open `.env` and add your key |
+| `ModuleNotFoundError` | Run `pip install -r requirements.txt` again |
+| Port 8000 already in use | Change `APP_PORT=8001` in `.env` |
+| PDF text not extracted | Some scanned PDFs need OCR; try a text-based PDF |
+| Audio not playing | Check internet connection (gTTS needs internet) |
+| `(venv)` not showing | Re-run the activate command from Step 5 |
+
+---
+
+## 🛑 Stopping the Server
+
+Press **Ctrl + C** in the terminal.
+
+---
+
+## 📝 Notes
+
+- `knowledge_base.json` accumulates all admin answers permanently
+- For TXT/MD files, answers are also appended directly to the uploaded file
+- For PDF/DOCX files, answers are stored in `knowledge_base.json` and loaded alongside file content
+- `session_data.json` remembers which file was last uploaded (persists across restarts)
+
+
+
+
+http://127.0.0.1:8000/ - here's runs the web page properly !!
